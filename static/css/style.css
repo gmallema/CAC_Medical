@@ -10,8 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  */
-  /* font-family: 'Nunito', sans-serif; */
 }
 
 header {
@@ -20,14 +18,14 @@ header {
 }
 
 h5 {
-  color: #04182d;
+  color: var(--primary-color);
   margin-top: 10px;
   font-size: 20px;
   padding: 10px 5px;
 }
 
 h6 {
-  color: #04182d;
+  color: var(--primary-color);
   margin: 0;
   margin-top: auto;
   margin-bottom: 10px;
@@ -298,7 +296,7 @@ fieldset {
 }
 
 .form_title {
-  color: #04182d;
+  color: var(--primary-color);
   text-align: center;
   margin: 0;
   font-size: 30px;
@@ -364,7 +362,6 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* justify-content: center; */
 }
 
 .medicosPortada {
@@ -386,7 +383,6 @@ fieldset {
   font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 30px; */
 }
 
 .freeman {
