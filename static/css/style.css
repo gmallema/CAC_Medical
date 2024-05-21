@@ -1,0 +1,631 @@
+:root {
+  --bg-color: #007DDB;
+  --primary-color: black;
+  --secondary-color: white;
+  --third-color: #9f3647;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  */
+  /* font-family: 'Nunito', sans-serif; */
+}
+
+header {
+  background-color: var(--bg-color);
+  height: 150px;
+}
+
+h5 {
+  color: #04182d;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+h6 {
+  color: #04182d;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: none;
+}
+
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .8em 1em;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 100%;
+  padding: 0 10px;
+  background-attachment: fixed;
+  background-color: #bbb0b0;
+  box-sizing: border-box;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+#logoIMG {
+  height: auto;
+  max-height: 150px;
+  padding: 0px;
+  width: auto;
+}
+
+#nosotros {
+  background-image: url("../img/Medicos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+
+#nosotros div p {
+  color: var(--secondary-color);
+}
+
+#serviciosPrestados {
+  margin-top: 10px;
+  padding: 50px;
+}
+
+#menuHam,
+#menu-check {
+  display: none;
+}
+
+
+.contenedorServ {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorServ h1 {
+  color: var(--primary-color);
+  margin: 10px;
+}
+
+.descripcionServ p {
+  color: var(--primary-color);
+  margin: 10px;
+  padding-left: 30px;
+}
+
+.fondoServ {
+  opacity: 0.6;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tituloServ {
+  position: absolute;
+  bottom: 0%;
+  color: var(--primary-color);
+  font-size: 24px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+
+.logo {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: auto;
+  margin-left: 0px;
+  margin-right: 120px;
+}
+
+.menu {
+  width: auto;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style-type: none;
+  margin-right: 100px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 2vw;
+  color: var(--secondary-color);
+}
+
+.descripcion {
+  margin: auto;
+  padding: 50px;
+}
+
+.descripcion h1 {
+  color: var(--secondary-color);
+}
+
+.contenedorMedicos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.medico {
+  padding: 20px;
+  margin: 50px;
+  text-align: center;
+}
+
+.contenedorServicios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.servicio {
+  padding: 20px;
+  margin: 50px;
+}
+
+.servicio a {
+  text-decoration: none;
+}
+
+
+.servicioImagen {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.servicioImagen:hover {
+  border: solid var(--primary-color);
+}
+
+.tituloServicio {
+  text-align: center;
+  font-size: 40px;
+}
+
+.tituloMedico {
+  text-align: center;
+  font-size: 30px;
+}
+
+.botonTurno {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--third-color);
+  border: solid var(--primary-color) 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botonTurno:hover {
+  background-color: var(--bg-color);
+  transform: translateY(-2px);
+}
+
+.botonTurno:active {
+  transform: translateY(1px);
+}
+
+.contenedorFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+.contenidoFooter {
+  padding: 20px;
+  width: 33%;
+  text-align: left;
+}
+
+.contenidoFooter h1 {
+  font-size: 30px;
+}
+
+.contenidoFooter p {
+  font-size: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.menu a:hover {
+  color: var(--third-color);
+}
+
+
+
+/* Formulario */
+.form {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 500px;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 50px 50px 50px 80px;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.form_container {
+  width: 100%;
+  display: 1em;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.form_title {
+  color: #04182d;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form_input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .8em 1em;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.error {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 20px;
+  color: red;
+}
+
+.form_input_i {
+  font-family: inherit;
+  font-size: 20px;
+  background-color: #bbb0b0;
+  border: solid 1px white;
+
+}
+
+.form_radio {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 5fr;
+}
+
+.botonForm {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--bg-color);
+  border: solid var(--primary-color) 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botonForm:hover {
+  background-color: var(--third-color);
+  transform: translateY(-2px);
+}
+
+.botonForm:active {
+  transform: translateY(1px);
+}
+
+.contenedorMedicosForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.medicosPortada {
+  margin: 50px;
+}
+
+.tituloMedicoForm {
+  text-align: center;
+  font-size: 60px;
+}
+
+.FotoMedico {
+  width: 30vw;
+  height: 30vw;
+}
+
+/* Fuentes */
+.sedan {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: 30px; */
+}
+
+.freeman {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.poetsen {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3vw;
+  color: var(--bg-color);
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.5vw;
+  font-variation-settings: "slnt" 0;
+  color: var(--secondary-color);
+  padding-top: 30px;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 70px;
+  color: var(--bg-color);
+}
+
+.ubuntu {
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 3vw;
+  color: var(--bg-color);
+}
+
+
+/* Media Queries para dispositivos */
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+
+  header {
+    height: 100px;
+  }
+
+  #logoIMG {
+    height: 100px;
+  }
+
+  #nosotros {
+    height: 500px;
+  }
+
+  .container {
+    height: 100px;
+    width: 100%;
+  }
+
+  .menu ul li {
+    margin-right: 40px;
+  }
+
+  .logo {
+    margin-right: 90px;
+  }
+
+  .contenidoFooter h1 {
+    font-size: 25px;
+  }
+
+  .contenidoFooter p {
+    font-size: 15px;
+  }
+
+  .contenidoFooter iframe {
+    width: 200px;
+    height: 200px
+  }
+
+  .servicioImagen {
+    width: 250px;
+    height: 250px;
+  }
+
+  .FotoMedico {
+    width: 100%;
+  }
+
+  .inter {
+    font-size: 1.5vw;
+  }
+
+  .manrope {
+    font-size: 50px;
+  }
+
+  .sedan {
+    font-size: 30px;
+  }
+
+}
+
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+
+  header {
+    height: 100px;
+  }
+
+  header div.container nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20%;
+    width: 100%;
+    background-color: var(--bg-color);
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    opacity: 0.8;
+    color: var(--secondary-color);
+    font-size: 2em;
+    z-index: 9999;
+  }
+
+  header div.container nav ul a {
+    color: var(--secondary-color);
+    background: none;
+  }
+
+  header div.container nav ul,
+  header div.container nav ul li {
+    display: block;
+    text-align: right;
+  }
+
+  #logoIMG {
+    height: 100px;
+    width: 200px;
+  }
+
+  #nosotros {
+    height: 400px;
+  }
+
+  #menu-check:not(:checked)~nav {
+    display: none;
+  }
+
+  #menu-check:checked~nav {
+    display: block;
+  }
+
+  #menuHam {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 99999;
+  }
+
+  #menuHam:hover {
+    color: var(--primary-color);
+  }
+
+  #menu-cerrar {
+    display: none;
+  }
+
+  #menu-check:checked~label #menu-abrir {
+    display: none;
+  }
+
+  #menu-check:checked~label #menu-cerrar {
+    display: block;
+  }
+
+  .container {
+    height: 100px;
+    width: 100%;
+  }
+
+  .menu ul li a {
+    font-size: 20px;
+  }
+
+
+  .contenidoFooter h1 {
+    font-size: 20px;
+  }
+
+  .contenidoFooter p {
+    font-size: 10px;
+  }
+
+  .contenidoFooter iframe {
+    width: 100px;
+    height: 100px
+  }
+
+  .servicioImagen {
+    width: 200px;
+    height: 200px;
+  }
+
+  .FotoMedico {
+    width: 400px;
+    height: 400px;
+  }
+
+  .FotoTurno {
+    width: 500px;
+    height: 500px;
+  }
+
+  .inter {
+    font-size: 10px;
+  }
+
+  .manrope {
+    font-size: 40px;
+  }
+
+  .sedan {
+    font-size: 30px;
+  }
+
+}
